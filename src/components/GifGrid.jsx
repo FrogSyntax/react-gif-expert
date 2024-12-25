@@ -1,6 +1,6 @@
 import { GifItem } from "./GifItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
-
+import PropTypes from "prop-types";
 //! UseEffect es un hook que sirve para disparar efectos secundarios
 
 export const GifGrid = ({ category, setCategories }) => {
@@ -24,3 +24,9 @@ export const GifGrid = ({ category, setCategories }) => {
         </>
     );
 };
+
+
+GifGrid.protoTypes = {
+    category: PropTypes.string.isRequired,
+    setCategories: PropTypes.func.isRequired
+}

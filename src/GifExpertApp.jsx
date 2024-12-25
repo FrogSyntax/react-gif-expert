@@ -3,7 +3,7 @@ import { AddCategory, GifGrid } from "./components";
 
 export const GifExpertApp = () => {
     //! Es recomendable tener x cantidad de useState por cantidad de variables que necesitamos
-    const [categories, setCategories] = useState(["One Punch"]);
+    const [categories, setCategories] = useState(["One Punch", "Kimetsu"]);
 
     const deleteAllCategories = () => {
         setCategories([])
